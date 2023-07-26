@@ -1,0 +1,36 @@
+/*(oldVal- oldMin)*newRange / oldRange + newMin*/
+
+.header-img{
+    position: sticky;
+    height: 100vh;
+    background-image:linear-gradient(0deg, rgba(213, 213, 213, 0.293), rgba(116, 255, 255, 0.424)), url("/src/assets/Images/mainbuilding.jpg");
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    translate: 0 calc(-1% * (max(var(--scroll), 25) - 25) * 100 / 75 );
+    --background-opacity: calc(1% * min(var(--scroll), 70) * 100 / 70 );
+
+}
+.top-section{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(201, 208, 215, var(--background-opacity));
+}
+
+.header-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+}
+
+.header-content>div{
+    font-size: 4rem;
+    color: rgb(29, 29, 29);
+    font-weight: 700;
+}
