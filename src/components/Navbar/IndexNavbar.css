@@ -2,16 +2,17 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(98, 102, 102, 0.617);
+    --opacity: calc(1% * min( ((max(var(--scroll), 35) - 5) * 100 / 85), 80 )  );
+    background-color: rgba(31, 91, 98, var(--opacity));
     position: fixed;
     top: 0;
     z-index: 50;
     margin: 0 auto;
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     color: black;
     font-size: 1.1rem;
-    
+    transition: all 0.3s ease;
 }
 .mobile-nav{
     width: 100%;
@@ -24,7 +25,7 @@ nav{
     width: 90%;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 }
 .logo{
     cursor: pointer;
@@ -46,8 +47,17 @@ nav{
     background-color: rgba(199, 253, 255, 0.44);
 }
 
+.small-screen-nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}   
 
-
+.small-screen-nav-list>li{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 @media (min-width:1000px){
     .mobile-nav{
         display: none;
@@ -61,11 +71,21 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white;
 }
 
 .big-screen-nav-list{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
+}
+
+.visit-yip-btn{
+    transition: all 0.3s ease-in;
+}
+.visit-yip-btn:hover{
+    background: none;
 }
 
 @media (max-width: 1000px){
@@ -73,4 +93,8 @@ nav{
         display: none;
     }
 
+}
+
+.nav-home:active{
+    color: black;
 }

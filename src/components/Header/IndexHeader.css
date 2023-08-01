@@ -31,6 +31,27 @@
 
 .header-content>div{
     font-size: 4rem;
-    color: rgb(29, 29, 29);
+    color: rgb(36, 37, 37);
     font-weight: 700;
+    transition: all 0.3s ease-in;
+    padding-top: 20%;
+    animation-name: homescreencontent;
+    animation-duration: .5s;
+}
+
+@keyframes homescreencontent {
+    from{
+        transform: translateY(30%) scale(0.5);
+    }
+    to{
+        transform: translateY(0%)  scale(1);
+    }
+}
+
+
+@media (max-width:1001px){
+    .header-content>div{
+        font-size: 3rem;
+        padding: 0 1rem;
+    }
 }

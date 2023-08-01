@@ -1,0 +1,72 @@
+import YIP from "./YIPdata"
+
+{YIP.map(item => {
+return(<TabPane tabId={"link"+item.id}>
+              <div className="yipitems">
+                <div className="d-flex flex-column justify-content-center align-items-center mx-4">
+                  <h1 className="h1-seo text-center">
+                    <span id={item.idFirst}>{item.school}</span>+
+                  </h1>
+                  <div ref={ref} className="count-title ">
+                    Schools participated
+                  </div>
+                </div>
+                <div className="d-flex flex-column justify-content-center align-items-center mx-4">
+                  <h1 className="h1-seo text-center">
+                    <span id={item.idSecond}>{item.student}</span>+
+                  </h1>
+                  <div className="count-title">Students participated</div>
+                </div>
+                <div className="d-flex flex-column justify-content-center align-items-center mx-4">
+                  <h1 className="h1-seo text-center" id={item.idThird}>
+                    {item.teams}
+                  </h1>
+                  <div className="count-title">Teams participated</div>
+                </div>
+              </div>
+            </TabPane>)}};
+
+<TabPane tabId="link2">
+<div className="yipitems">
+  <div className="d-flex flex-column justify-content-center align-items-center mx-4">
+    <h1 className="h1-seo text-center">
+      <span id="2018-first">1000</span>+
+    </h1>
+    <div className="count-title">Schools participated</div>
+  </div>
+  <div className="d-flex flex-column justify-content-center align-items-center mx-4">
+    <h1 className="h1-seo text-center">
+      <span id="2018-second">1000</span>+
+    </h1>
+    <div className="count-title">Students participated</div>
+  </div>
+  <div className="d-flex flex-column justify-content-center align-items-center mx-4">
+    <h1 className="h1-seo text-center" id="2018-third">
+      24
+    </h1>
+    <div className="count-title">Teams participated</div>
+  </div>
+</div>
+</TabPane>
+<TabPane tabId="link3">
+<div className="yipitems">
+  <div className="d-flex flex-column justify-content-center align-items-center mx-4">
+    <h1 className="h1-seo text-center">
+      <span id="2017-first">200</span>+
+    </h1>
+    <div className="count-title">Schools participated</div>
+  </div>
+  <div className="d-flex flex-column justify-content-center align-items-center mx-4">
+    <h1 className="h1-seo text-center">
+      <span id="2017-second">400</span>+
+    </h1>
+    <div className="count-title">Students participated</div>
+  </div>
+  <div className="d-flex flex-column justify-content-center align-items-center mx-4">
+    <h1 className="h1-seo text-center" id="2017-third">
+      6
+    </h1>
+    <div className="count-title">Teams participated</div>
+  </div>
+</div>
+</TabPane>
