@@ -4,7 +4,6 @@ body {
 ::-webkit-scrollbar {
   width: 0px;
 }
-
 @media screen and (min-width: 1025px) {
   .about-grid {
     /* background-image: url("https://online.stanford.edu/sites/default/files/styles/embedded_large/public/2020-06/Statistics-Graduate-Certificate_2.jpg?itok=w-FJqsGq"); */

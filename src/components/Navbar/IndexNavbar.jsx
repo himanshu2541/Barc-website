@@ -4,6 +4,9 @@ import { CiMenuBurger } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Logo from '/src/assets/Images/uc.jpg'
+// import Teams from '../Team/Teams'
+import {Link} from 'react-router-dom'
+
 const IndexNavbar = ({positionTop}) => {
   const [navMobile, setNavMobile] = useState(false);
   const [navHeight, setNavHeight] = useState(100); 
@@ -102,7 +105,7 @@ const IndexNavbar = ({positionTop}) => {
               <AnchorLink href="#home" className="nav-testimonials">Testimonials</AnchorLink>
             </li>
             <li>
-              <AnchorLink href="#home" className="nav-team">Our Team</AnchorLink>
+              <Link to = '/team' >Our Team</Link>
             </li>
             <li>
               <AnchorLink href="#contact" className="nav-contact">Contact</AnchorLink>

@@ -8,8 +8,8 @@
     background-position: center;
     background-size: cover;
     z-index: -1;
-    translate: 0 calc(-1% * (max(var(--scroll), 25) - 25) * 100 / 75 );
-    --background-opacity: calc(1% * min(var(--scroll), 70) * 100 / 70 );
+    /* translate: 0 calc(-1% * (max(var(--scroll), 25) - 25) * 100 / 75 ); */
+    --background-opacity: calc(1% * min(var(--scroll), 60) * 100 / 60 );
 
 }
 .top-section{
@@ -37,6 +37,7 @@
     padding-top: 20%;
     animation-name: homescreencontent;
     animation-duration: .5s;
+    translate: 0 calc(-1% * (max(var(--scroll), 15) - 15) * 100 / 85 );
 }
 
 @keyframes homescreencontent {
