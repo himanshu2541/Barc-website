@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,12 +15,14 @@
 
 :root{
     --font-color: rgb(104, 104, 104);
-    --bgcolor: rgb(16, 32, 48);
+    --bgcolor: rgb(192, 192, 192);
     --scroll: 0;
 }
 
 body{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: var(--font-color);
     background-color: var(--bgcolor);
+
+    /* width: 100vw; */
 }

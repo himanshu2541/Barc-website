@@ -74,6 +74,8 @@ function YIPstats() {
   }, [isInView]);
   return (
     <div className="yipstats">
+      <motion.div >
+
       <h3 className="yipstats-heading">Young Innovators Program</h3>
       <div className="yipcard">
         <CardHeader className="yipnav d-flex justify-content-center align-items-center">
@@ -101,7 +103,7 @@ function YIPstats() {
                         onClick={(e) => setIconsTabs(navitem.id)}
                         href="#"
                       >
-                        <i className={navitem.icon} />
+                        {/* <i className={navitem.icon} /> */}
                         <span className="text-success">
                           <p>YIP {navitem.year}</p>
                         </span>
@@ -144,6 +146,8 @@ function YIPstats() {
           </TabContent>
         </CardBody>
       </div>
+              
+      </motion.div>
     </div>
   );
 }

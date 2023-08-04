@@ -4,27 +4,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
-body,
-input,
-textarea {
-  font-family: "Poppins", sans-serif;
-}
 ::-webkit-scrollbar {
   width: 0;
 }
 .contact-page {
   position: relative;
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
   padding: 2rem;
-  background-image: url("https://img.freepik.com/premium-photo/website-internet-contact-us-page-concept-with-phone-chat-email-icons-symbol-telephone-mail-mobile-phone-website-page-contact-us-wide-web-banner-copy-space-blue-background_256259-2730.jpg");
+  /* background-image: url("https://img.freepik.com/premium-photo/website-internet-contact-us-page-concept-with-phone-chat-email-icons-symbol-telephone-mail-mobile-phone-website-page-contact-us-wide-web-banner-copy-space-blue-background_256259-2730.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  overflow-x: hidden;
+  overflow-x: hidden; */
+  background: linear-gradient(180deg, rgb(43, 43, 43), black);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,7 +170,7 @@ textarea.input {
 
 .information {
   display: flex;
-  color: #444;
+  color: #d7d7d7;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   font-size: 0.95rem;

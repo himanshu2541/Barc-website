@@ -1,6 +1,4 @@
-body {
-  overflow-x: hidden;
-}
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -9,8 +7,8 @@ body {
     /* background-image: url("https://online.stanford.edu/sites/default/files/styles/embedded_large/public/2020-06/Statistics-Graduate-Certificate_2.jpg?itok=w-FJqsGq"); */
     /* background-image: url("https://cdn.pixabay.com/photo/2020/02/15/14/33/network-4851119_1280.jpg"); */
     /* background-image: url("https://i.pinimg.com/736x/d2/36/a1/d236a15059ae4bee49f123173e808bbd.jpg"); */
-    background-attachment: fixed;
-    background-size: cover;
+    /* background-attachment: fixed;
+    background-size: cover; */
   }
   .about-grid {
     display: flex;
@@ -19,46 +17,63 @@ body {
     align-items: center;
   }
   .about-us {
-    width: 100vw;
+    /* width: 100vw; */
     text-align: center;
-    height: 30vh;
+    background-color: #00000057;
+    padding: 5rem;
     /* background-color: none; */
   }
   .about-us h1 {
     /* color: #e8da6d; */
-    font-size: 7vw;
-    padding-top: 5vh;
+    font-size: 5rem;
+    font-weight: 700;
+    color: whitesmoke;
+    /* padding-top: 5vh; */
   }
   .about-us-text {
-    background-color: #08707f;
-    height: 20vh;
-    width: 100vw;
+    /* height: 20vh; */
     text-align: center;
-    color: #f7e7ce;
-    margin-top: -1vh;
-    padding-top: 2vh;
-    padding-left: 20vw;
-    padding-right: 20vw;
-
-    position: relative;
+    color: #262626;
+    font-weight: 500;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .about-us-text p {
-    font-size: max(1.3vw, 100%);
+    font-size: max(1.5rem, 100%);
+    padding: 0 2rem;
+  }
+
+  .about-us-container{
+    max-width: 1240px;
+    background-color: #18716c63;
+    margin-bottom: 2rem;
+    display: flex;
+    
+  }
+
+  .yip-stats-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
   }
   .yipstats {
     border: hidden;
     text-align: center;
-    /* padding: 0 5vw 0 10vw; */
-    /* margin-left: -15vw; */
-    /* width: 100vw; */
-    /* margin-right: -10vw; */
-    height: 60vh;
-    /* padding-bottom: 10vh; */
-    /* margin-top: -5vw; */
-    background-color: none;
-    width: 60vw;
-    /* transform: perspective(100px) translatez(1px); */
+    height: auto;
+    width: 100%;
+    max-width: 1240px;
+    padding: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #18716c63;
   }
+  
   .yipnav {
     /* background-color: #f2f2f2; */
     /* background-color: white; */
@@ -87,12 +102,12 @@ body {
     margin: auto;
   }
   .yipstats-heading {
-    font-size: min(2rem, 8vw);
+    font-size: 3rem;
     font-weight: 800;
     padding: 1.2rem 0;
     /* background-color: white; */
     /* color: #08707f; */
-    color: cyan;
+    color: rgb(34, 34, 34);
     /* background-color:none; */
   }
   .yipitems {
@@ -111,7 +126,7 @@ body {
     column-gap: 0;
     font-weight: 500;
     /* color: #04333b; */
-    color: lavenderblush;
+    color: rgb(39, 39, 39);
   }
   .yipcardbody {
     padding-top: 3vw;
@@ -119,13 +134,16 @@ body {
     /* border-radius: 30px; */
   }
   .yipcard {
-    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
-    /* background-color: white; */
+    box-shadow: 0 0 5px rgba(129, 124, 124, 0.2);
+    background-color: #ffffff5c;
     backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.12);
-    border-radius: 30px;
+    /* background-color: rgba(107, 107, 107, 0.359); */
+    border-radius: 5px;
   }
 
+  .text-success{
+    /* padding: 0.5rem; */
+  }
   .tab-space {
     background-color: none;
   }
